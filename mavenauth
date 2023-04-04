@@ -1,0 +1,4 @@
+#!/bin/zsh
+
+export CODEARTIFACT_AUTH_TOKEN=`aws codeartifact get-authorization-token --domain $ECR_DOMAIN --domain-owner $ECR_ACCOUNT --query authorizationToken --output text`
+echo "Set CODEARTIFACT_AUTH_TOKEN as `echo $CODEARTIFACT_AUTH_TOKEN`"

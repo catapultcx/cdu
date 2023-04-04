@@ -1,0 +1,6 @@
+#!/bin/zsh
+
+aws ecr get-login-password --region eu-west-2 | docker login --username AWS --password-stdin $ECR_URL
+
+echo "Done ERR login to $ECR_URL with $AWS_PROFILE"
+

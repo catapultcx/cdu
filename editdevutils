@@ -1,0 +1,4 @@
+#!/bin/zsh
+
+UTILS_HOME=$HOME/code/catapult/dev-utils
+code $UTILS_HOME
