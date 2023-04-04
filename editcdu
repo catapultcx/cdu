@@ -1,0 +1,11 @@
+#!/bin/zsh
+
+if [ -z "$CDU_HOME" ] ; then
+  # shellcheck disable=SC2016
+  echo 'CDU_HOME is not set'
+  exit 1
+else 
+  echo "Found CDU_HOME as $CDU_HOME"
+fi
+
+code "$CDU_HOME"
